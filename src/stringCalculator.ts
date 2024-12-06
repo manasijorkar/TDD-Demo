@@ -10,7 +10,7 @@ export class StringCalculator{
         } 
 
         if(numbers.includes(",")){
-            const numArray = numbers.split(",");
+            const numArray = numbers.split(/[,\n]+/);
             let sum = 0;
             for (let i = 0; i < numArray.length; i++){  
                 const num = parseInt(numArray[i]);
