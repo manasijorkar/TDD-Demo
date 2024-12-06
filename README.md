@@ -32,4 +32,5 @@ Getting Started :
   Running Tests:
     npm test
 
-    
+  Running or deploying the code outside the Jest environment:
+    tsc --build
