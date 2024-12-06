@@ -12,4 +12,8 @@ describe("StringCalculator", () => {
       expect(calculator.add("")).toBe(0);
     });
 
+    it("should return number itself for single number", ()=>{
+      expect(calculator.add("1")).toBe(1);
+    });
+
 });
