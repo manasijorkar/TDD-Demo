@@ -9,6 +9,18 @@ export class StringCalculator{
             return num;
         } 
 
+        if(numbers.includes(",")){
+            const numArray = numbers.split(",");
+            let sum = 0;
+            for (let i = 0; i < numArray.length; i++){  
+                const num = parseInt(numArray[i]);
+                if(!isNaN(num)){
+                    sum += num;
+                }     
+            }
+            return sum;
+        }
+
         return 0;
     }
 }
